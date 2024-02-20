@@ -1,0 +1,113 @@
+==4159== Memcheck, a memory error detector
+==4159== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4159== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4159== Command: ./a.out
+==4159== Parent PID: 1252
+==4159== 
+==4159== Invalid read of size 1
+==4159==    at 0x10976B: hold_grbg (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093E1: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097CA: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159==  Address 0x4a49132 is 0 bytes after a block of size 2 alloc'd
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10948C: join (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10925A: ft_free (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10931F: read_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093A5: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097CA: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== Invalid write of size 1
+==4159==    at 0x10977F: hold_grbg (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093E1: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097CA: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159==  Address 0x4a491d0 is 0 bytes after a block of size 0 alloc'd
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109711: hold_grbg (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093E1: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097CA: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== Invalid read of size 1
+==4159==    at 0x10941C: ft_strlen (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109456: join (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10925A: ft_free (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10931F: read_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093A5: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097F0: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159==  Address 0x4a491d0 is 0 bytes after a block of size 0 alloc'd
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109711: hold_grbg (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093E1: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097CA: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== Invalid read of size 1
+==4159==    at 0x1094D2: join (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10925A: ft_free (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10931F: read_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093A5: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097F0: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159==  Address 0x4a491d0 is 0 bytes after a block of size 0 alloc'd
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109711: hold_grbg (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093E1: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097CA: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== 
+==4159== HEAP SUMMARY:
+==4159==     in use at exit: 12 bytes in 6 blocks
+==4159==   total heap usage: 30 allocs, 24 frees, 1,076 bytes allocated
+==4159== 
+==4159== 2 bytes in 1 blocks are definitely lost in loss record 1 of 6
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109608: trim_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093CE: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1097F0: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== 2 bytes in 1 blocks are definitely lost in loss record 2 of 6
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109608: trim_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093CE: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10980E: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== 2 bytes in 1 blocks are definitely lost in loss record 3 of 6
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109608: trim_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093CE: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10982C: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== 2 bytes in 1 blocks are definitely lost in loss record 4 of 6
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109608: trim_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093CE: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x10984A: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== 2 bytes in 1 blocks are definitely lost in loss record 5 of 6
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109608: trim_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093CE: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109868: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== 2 bytes in 1 blocks are definitely lost in loss record 6 of 6
+==4159==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4159==    by 0x1091EB: ft_calloc (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109608: trim_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x1093CE: get_next_line (in /workspaces/get_next_line/new20/02/a.out)
+==4159==    by 0x109886: main (in /workspaces/get_next_line/new20/02/a.out)
+==4159== 
+==4159== LEAK SUMMARY:
+==4159==    definitely lost: 12 bytes in 6 blocks
+==4159==    indirectly lost: 0 bytes in 0 blocks
+==4159==      possibly lost: 0 bytes in 0 blocks
+==4159==    still reachable: 0 bytes in 0 blocks
+==4159==         suppressed: 0 bytes in 0 blocks
+==4159== 
+==4159== For lists of detected and suppressed errors, rerun with: -s
+==4159== ERROR SUMMARY: 10 errors from 10 contexts (suppressed: 0 from 0)
